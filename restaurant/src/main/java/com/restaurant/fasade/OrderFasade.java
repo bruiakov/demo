@@ -66,6 +66,7 @@ public class OrderFasade {
 		orderRepository.findById(id).ifPresent(i -> orderRepository.delete(i));
 	}
 
+	@Transactional
 	public OrderDTO updateOrder(@NotNull Long id, @NotNull List<Meal> meals) {
 		var ord = orderRepository.findById(id).orElseThrow();
 		orderPartRepository.deleteAll(orderPartRepository.findByOrder(ord));

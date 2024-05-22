@@ -12,6 +12,8 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.TestPropertySource;
+import org.springframework.test.context.jdbc.Sql;
+import org.springframework.test.context.jdbc.Sql.ExecutionPhase;
 
 import com.restaurant.entity.Cusine;
 import com.restaurant.entity.Lunch;
@@ -22,8 +24,9 @@ import com.restaurant.fasade.LunchFacade;
 import com.restaurant.fasade.MealFasade;
 import com.restaurant.fasade.OrderFasade;
 
-@SpringBootTest
+@SpringBootTest()
 @TestPropertySource(locations = "classpath:test.properties")
+@Sql(scripts = "classpath:initDBTest.sql", executionPhase = ExecutionPhase.BEFORE_TEST_CLASS)
 class RestaurantApplicationTests {
 
 	@Autowired
