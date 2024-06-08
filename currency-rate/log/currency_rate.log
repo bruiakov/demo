@@ -1,0 +1,36 @@
+2024-06-08T13:57:33.002+03:00  INFO 39800 --- [main] c.e.c.rate.CurrencyRateApplication       : Starting CurrencyRateApplication v0.0.1-SNAPSHOT using Java 17.0.10 with PID 39800 (D:\work\test-workspace\currency-rate\target\currency-rate-0.0.1-SNAPSHOT.jar started by PC-M2 in D:\work\test-workspace\currency-rate\target)
+2024-06-08T13:57:33.006+03:00  INFO 39800 --- [main] c.e.c.rate.CurrencyRateApplication       : No active profile set, falling back to 1 default profile: "default"
+2024-06-08T13:57:34.060+03:00  INFO 39800 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-08T13:57:34.180+03:00  INFO 39800 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 103 ms. Found 3 JPA repository interfaces.
+2024-06-08T13:57:35.786+03:00  INFO 39800 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2024-06-08T13:57:35.805+03:00  INFO 39800 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-08T13:57:35.806+03:00  INFO 39800 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-06-08T13:57:35.903+03:00  INFO 39800 --- [main] o.a.c.c.C.[.[.[/currency-rate]           : Initializing Spring embedded WebApplicationContext
+2024-06-08T13:57:35.903+03:00  INFO 39800 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2731 ms
+2024-06-08T13:57:36.548+03:00  INFO 39800 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.22.3 by Redgate
+2024-06-08T13:57:36.548+03:00  INFO 39800 --- [main] o.f.c.internal.license.VersionPrinter    : See release notes here: https://rd.gt/416ObMi
+2024-06-08T13:57:36.549+03:00  INFO 39800 --- [main] o.f.c.internal.license.VersionPrinter    : 
+2024-06-08T13:57:36.717+03:00  INFO 39800 --- [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:h2:file:../db/currency_db (H2 2.1)
+2024-06-08T13:57:36.758+03:00  INFO 39800 --- [main] o.f.core.internal.database.base.Schema   : Creating schema "CURRENCY_RATE" ...
+2024-06-08T13:57:36.766+03:00  INFO 39800 --- [main] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "CURRENCY_RATE"."flyway_schema_history" ...
+2024-06-08T13:57:36.812+03:00  INFO 39800 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "CURRENCY_RATE": null
+2024-06-08T13:57:36.819+03:00  INFO 39800 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "CURRENCY_RATE" to version "1 - create tables"
+2024-06-08T13:57:36.838+03:00  INFO 39800 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "CURRENCY_RATE" to version "2 - adds currencies"
+2024-06-08T13:57:36.851+03:00  INFO 39800 --- [main] o.f.core.internal.command.DbMigrate      : Successfully applied 2 migrations to schema "CURRENCY_RATE", now at version v2 (execution time 00:00.017s)
+2024-06-08T13:57:36.983+03:00  INFO 39800 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-08T13:57:37.031+03:00  INFO 39800 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn3: url=jdbc:h2:file:../db/currency_db user=ROBOT
+2024-06-08T13:57:37.035+03:00  INFO 39800 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-08T13:57:37.113+03:00  INFO 39800 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-08T13:57:37.233+03:00  INFO 39800 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-06-08T13:57:37.320+03:00  INFO 39800 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-08T13:57:37.830+03:00  INFO 39800 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-08T13:57:37.924+03:00  WARN 39800 --- [main] org.hibernate.dialect.Dialect            : HHH000511: The 2.1.210 version for [org.hibernate.dialect.H2Dialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 2.1.214. Check the community dialects project for available legacy versions.
+2024-06-08T13:57:37.937+03:00  WARN 39800 --- [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-08T13:57:39.186+03:00  INFO 39800 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-08T13:57:39.190+03:00  INFO 39800 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-08T13:57:40.236+03:00  WARN 39800 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-08T13:57:40.935+03:00  INFO 39800 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/currency-rate'
+2024-06-08T13:57:40.997+03:00  INFO 39800 --- [main] c.e.c.rate.CurrencyRateApplication       : Started CurrencyRateApplication in 8.749 seconds (process running for 9.516)
+2024-06-08T13:58:02.821+03:00  INFO 39800 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-08T13:58:02.824+03:00  INFO 39800 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-08T13:58:02.828+03:00  INFO 39800 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
